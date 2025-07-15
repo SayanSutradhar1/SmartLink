@@ -1,0 +1,1 @@
+export const SWALAY_MAIN = "https://swalay.talantoncore.in"

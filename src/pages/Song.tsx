@@ -1,9 +1,11 @@
-import axios from "axios";
 import { Share2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { StreamingPlatformLink } from "../components/Song/PlatformLinks";
 import { icons } from "@/utils/icons";
+import { apiGet } from "@/lib/apiFetch";
+import { SWALAY_MAIN } from "@/utils/constants";
+import type { ApiResponse } from "@/interfaces/api.interface";
 
 interface TrackFetchData {
   profilePicture? : string
@@ -26,6 +28,7 @@ interface TrackFetchData {
   description? : string
 }
 
+
 export default function Song() {
   const { trackName } = useParams<{ trackName: string }>();
 
@@ -35,18 +38,11 @@ export default function Song() {
 
   const fetchTrack = async () => {
     try {
-      const apiResponse = await axios.get(
-        `${
-          import.meta.env.VITE_SWALAY_CLIENT
-        }/api/smartlink/getTrack?trackName=${trackName}`
-      );
+      const res = await apiGet(`/api/smartlink/getTrack?trackName=${trackName}`) as ApiResponse<TrackFetchData>
 
-      const res = apiResponse.data as {
-        success: boolean;
-        status: number;
-        message: string;
-        data: TrackFetchData;
-      };
+      if(!res.data){
+        window.location.href = SWALAY_MAIN
+      }
 
       if (res.success) {
         setTrackDetails(res.data);

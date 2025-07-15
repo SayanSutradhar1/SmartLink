@@ -1,4 +1,6 @@
-import axios from "axios";
+import type { ApiResponse } from "@/interfaces/api.interface";
+import { apiGet } from "@/lib/apiFetch";
+import { SWALAY_MAIN } from "@/utils/constants";
 import { Instagram, Play } from "lucide-react";
 import { useEffect, useState } from "react";
 import { FaSpotify } from "react-icons/fa";
@@ -39,24 +41,18 @@ export default function Artist() {
   const { uniqueUsername } = useParams<{ uniqueUsername: string }>();
 
   const [profileData, setProfileData] = useState<
-    DataForSmartLink | undefined
+    DataForSmartLink | undefined 
   >();
 
   const fetchProfile = async (uniqueUsername: string) => {
     try {
-      const apiResponse = await axios.get(
-        `${
-          import.meta.env.VITE_SWALAY_CLIENT
-        }/api/smartlink/getProfile?uniqueUsername=${uniqueUsername}`
-      );
+      const res = await apiGet(
+        `/api/smartlink/getProfile?uniqueUsername=${uniqueUsername}`
+      ) as ApiResponse<DataForSmartLink>
 
-      const res = apiResponse.data as {
-        success: boolean;
-        message: string;
-        status: number;
-        data: DataForSmartLink;
-      };
-
+      if (!res.data) {
+        window.location.href = SWALAY_MAIN
+      }
       console.log(res);
 
       if (res.success) {
@@ -73,7 +69,6 @@ export default function Artist() {
   }, [uniqueUsername]);
 
   return (
-
     <div className="min-h-screen bg-black lg:bg-black">
       <div className="min-h-screen bg-gradient-to-b from-amber-900/20 via-black to-black text-white max-w-md mx-auto lg:max-w-lg xl:max-w-xl lg:bg-black">
         {/* Hero Section */}
@@ -82,7 +77,7 @@ export default function Artist() {
             src={`${import.meta.env.VITE_PUBLIC_AWS_S3_FOLDER_PATH}/user/${
               profileData?.profilePicture
             }`}
-            className="absolute inset-0 bg-cover bg-center object-cover h-full"
+            className="absolute w-full inset-0 bg-cover bg-center object-cover h-full"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
           <div className="relative h-full flex flex-col justify-end p-6">

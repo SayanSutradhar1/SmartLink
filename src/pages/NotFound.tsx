@@ -1,4 +1,7 @@
+import { SWALAY_MAIN } from "@/utils/constants";
+
 export default function NotFound() {
+  window.location.href = SWALAY_MAIN
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
       <h1 className="text-6xl font-bold text-red-500 mb-4">404</h1>
