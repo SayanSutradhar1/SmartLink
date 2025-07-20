@@ -209,3 +209,7 @@
   background-repeat: no-repeat;
   /* filter: blur(5px); */
 }
+
+.glow {
+  text-shadow: 0 0 8px #3ccbc6, 0 0 12px #3ccbc6;
+}

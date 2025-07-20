@@ -1,3 +1,6 @@
+import { SWALAY_MAIN } from "@/utils/constants";
+import { Link } from "react-router-dom";
+
 export function Footer() {
   return (
     <footer className="bg-black/50 backdrop-blur-sm border-t border-white/10 py-6">
@@ -6,7 +9,7 @@ export function Footer() {
           {/* Company Logo/Name */}
           <div className="flex items-center  space-x-3 mb-4 md:mb-0">
             <div>
-              <h3 className="text-gray-400 font-thin">Powered By <span className="text-white font-semibold">SwaLay</span></h3>
+              <h3 className="text-gray-400 font-thin">Powered By <Link to={SWALAY_MAIN} target="_blank" className="text-white font-semibold">SwaLay</Link></h3>
             </div>
           </div>
         </div>
