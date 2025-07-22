@@ -14,7 +14,16 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#3ccbc6" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="canonical" href="https://swalay.music/" />
+        {/* Open Graph */}
+        <meta property="og:title" content="SwaLay SmartLink" />
+        <meta property="og:description" content="SwaLay SmartLink is your all-in-one music landing page. Share a single link and let your fans discover your songs, albums, and streaming platforms—everywhere, instantly." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://swalay.music/" />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SwaLay SmartLink" />
+        <meta name="twitter:description" content="SwaLay SmartLink is your all-in-one music landing page. Share a single link and let your fans discover your songs, albums, and streaming platforms—everywhere, instantly." />
       </Helmet>
       <div className="relative min-h-screen w-full flex flex-col justify-center items-center overflow-hidden bg-gradient-to-b from-amber-900/20 via-black to-black">
         {/* Full Background Image with Overlay */}

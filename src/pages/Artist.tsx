@@ -83,13 +83,23 @@ export default function Artist() {
   return (
     <>
       <Helmet>
-        <title>{profileData?.labelName}</title>
+        <title>{profileData?.labelName} | SwaLay SmartLink</title>
         <meta name="description" content={profileData?.bio} />
-        <meta name="keywords" content={profileData?.labelName} />
+        <meta name="keywords" content={`${profileData?.labelName}, SwaLay, music, smartlink, artist`} />
         <meta name="author" content={profileData?.labelName} />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#3ccbc6" />
+        <link rel="canonical" href={`https://swalay.music/${uniqueUsername}`} />
+        {/* Open Graph */}
+        <meta property="og:title" content={`${profileData?.labelName} | SwaLay SmartLink`} />
+        <meta property="og:description" content={profileData?.bio} />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content={`https://swalay.music/${uniqueUsername}`} />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${profileData?.labelName} | SwaLay SmartLink`} />
+        <meta name="twitter:description" content={profileData?.bio} />
       </Helmet>
       <div className="min-h-screen bg-black lg:bg-black">
         <div className="min-h-screen bg-gradient-to-b from-amber-900/20 via-black to-black text-white max-w-md mx-auto lg:max-w-lg xl:max-w-xl lg:bg-black">

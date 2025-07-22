@@ -1,0 +1,14 @@
+# robots.txt for SwaLay SmartLink
+# Allow all search engines to crawl the site
+User-agent: *
+
+# Disallow sensitive or non-public routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow everything else
+Allow: /
+
+# Sitemap location (update the URL to your actual sitemap if available)
+Sitemap: https://your-domain.com/sitemap.xml 

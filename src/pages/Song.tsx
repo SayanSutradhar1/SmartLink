@@ -90,13 +90,23 @@ export default function Song() {
   return (
     <>
       <Helmet>
-        <title>{trackDetails?.songName}</title>
+        <title>{trackDetails?.songName} | SwaLay SmartLink</title>
         <meta name="description" content={trackDetails?.description} />
-        <meta name="keywords" content={trackDetails?.songName} />
+        <meta name="keywords" content={`${trackDetails?.songName}, SwaLay, music, smartlink, song`} />
         <meta name="author" content={trackDetails?.singers[0].artistName} />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#3ccbc6" />
+        <link rel="canonical" href={`https://swalay.music/songs/${trackName}`} />
+        {/* Open Graph */}
+        <meta property="og:title" content={`${trackDetails?.songName} | SwaLay SmartLink`} />
+        <meta property="og:description" content={trackDetails?.description} />
+        <meta property="og:type" content="music.song" />
+        <meta property="og:url" content={`https://swalay.music/songs/${trackName}`} />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${trackDetails?.songName} | SwaLay SmartLink`} />
+        <meta name="twitter:description" content={trackDetails?.description} />
       </Helmet>
       <div className="min-h-screen">
         {/* Main Content */}
