@@ -4,17 +4,17 @@ export const icons = [
   {
     name: 'amazon',
     title: 'Amazon',
-    icon: '/icons/amazon.svg',
+    icon: '/icons/amazon.png',
   },
   {
     name: 'amazonMusic',
     title: 'Amazon Music',
-    icon: '/icons/amazonMusic.svg',
+    icon: '/icons/amazonMusic.png',
   },
   {
     name: 'anghami',
     title: 'Anghami',
-    icon: '/icons/anghami.svg',
+    icon: '/icons/anghami.png',
   },
   {
     name: 'appleMusic',
@@ -24,107 +24,107 @@ export const icons = [
   {
     name: 'audiomack',
     title: 'Audiomack',
-    icon: '/icons/audiomack.svg',
+    icon: '/icons/audiomack.png',
   },
   {
     name: 'audius',
     title: 'Audius',
-    icon: '/icons/audius.svg',
+    icon: '/icons/audius.webp',
   },
   {
     name: 'awa',
     title: 'AWA',
-    icon: '/icons/awa.svg',
+    icon: '/icons/awa.png',
   },
   {
     name: 'bandcamp',
     title: 'Bandcamp',
-    icon: '/icons/bandcamp.svg',
+    icon: '/icons/bandcamp.png',
   },
   {
     name: 'bandsintown',
     title: 'Bandsintown',
-    icon: '/icons/bandsintown.svg',
+    icon: '/icons/bandsintown.png',
   },
   {
     name: 'beatport',
     title: 'Beatport',
-    icon: '/icons/beatport.svg',
+    icon: '/icons/beatport.png',
   },
   {
     name: 'boomplay',
     title: 'Boomplay',
-    icon: '/icons/boomplay.svg',
+    icon: '/icons/boomplay.png',
   },
   {
     name: 'deezer',
     title: 'Deezer',
-    icon: '/icons/deezer.svg',
+    icon: '/icons/deezer.png',
   },
   {
     name: 'discogs',
     title: 'Discogs',
-    icon: '/icons/discogs.svg',
+    icon: '/icons/discogs.jpg',
   },
   {
     name: 'flo',
     title: 'Flo',
-    icon: '/icons/flo.svg',
+    icon: '/icons/flo.png',
   },
   {
     name: 'gaana',
     title: 'Gaana',
-    icon: '/icons/gaana.svg',
+    icon: '/icons/gaana.png',
   },
   {
     name: 'genius',
     title: 'Genius',
-    icon: '/icons/genius.svg',
+    icon: '/icons/genius.png',
   },
   {
     name: 'iHeartRadio',
     title: 'iHeartRadio',
-    icon: '/icons/iHeartRadio.svg',
+    icon: '/icons/iHeartRadio.png',
   },
   {
     name: 'imdb',
     title: 'IMDb',
-    icon: '/icons/imdb.svg',
+    icon: '/icons/imdb.png',
   },
   {
     name: 'instagram',
     title: 'Instagram',
-    icon: '/icons/instagram.svg',
+    icon: '/icons/instagram.png',
   },
   {
     name: 'itunesStore',
     title: 'iTunes Store',
-    icon: '/icons/itunesStore.svg',
+    icon: '/icons/itunesStore.png',
   },
   {
     name: 'jioSaavn',
     title: 'JioSaavn',
-    icon: '/icons/jioSaavn.svg',
+    icon: '/icons/jioSaavn.png',
   },
   {
     name: 'joox',
     title: 'JOOX',
-    icon: '/icons/joox.svg',
+    icon: '/icons/joox.png',
   },
   {
     name: 'kkbox',
     title: 'KKBOX',
-    icon: '/icons/kkbox.svg',
+    icon: '/icons/kkbox.png',
   },
   {
     name: 'lineMusic',
     title: 'LINE Music',
-    icon: '/icons/lineMusic.svg',
+    icon: '/icons/lineMusic.webp',
   },
   {
     name: 'musicBrainz',
     title: 'MusicBrainz',
-    icon: '/icons/musicBrainz.svg',
+    icon: '/icons/musicBrainz.png',
   },
   {
     name: 'napster',
@@ -134,32 +134,32 @@ export const icons = [
   {
     name: 'netease',
     title: 'Netease Music',
-    icon: '/icons/netease.svg',
+    icon: '/icons/netease.png',
   },
   {
     name: 'pandora',
     title: 'Pandora',
-    icon: '/icons/pandora.svg',
+    icon: '/icons/pandora.png',
   },
   {
     name: 'qobuz',
     title: 'Qobuz',
-    icon: '/icons/qobuz.svg',
+    icon: '/icons/qobuz.png',
   },
   {
     name: 'qqMusic',
     title: 'QQ Music',
-    icon: '/icons/qqMusic.svg',
+    icon: '/icons/qqMusic.png',
   },
   {
     name: 'sevenDigital',
     title: '7digital',
-    icon: '/icons/sevenDigital.svg',
+    icon: '/icons/sevenDigital.jpeg',
   },
   {
     name: 'shazam',
     title: 'Shazam',
-    icon: '/icons/shazam.svg',
+    icon: '/icons/shazam.png',
   },
   {
     name: 'snapchat',
@@ -174,12 +174,12 @@ export const icons = [
   {
     name: 'soundcloud',
     title: 'SoundCloud',
-    icon: '/icons/soundcloud.svg',
+    icon: '/icons/soundcloud.png',
   },
   {
     name: 'spotify',
     title: 'Spotify',
-    icon: '/icons/spotify.svg',
+    icon: '/icons/spotify.png',
   },
   {
     name: 'telmoreMusik',
@@ -189,22 +189,22 @@ export const icons = [
   {
     name: 'threads',
     title: 'Threads',
-    icon: '/icons/threads.svg',
+    icon: '/icons/threads.png',
   },
   {
     name: 'ticketmaster',
     title: 'Ticketmaster',
-    icon: '/icons/ticketmaster.svg',
+    icon: '/icons/ticketmaster.png',
   },
   {
     name: 'tidal',
     title: 'Tidal',
-    icon: '/icons/tidal.svg',
+    icon: '/icons/tidal.png',
   },
   {
     name: 'tiktok',
     title: 'TikTok',
-    icon: '/icons/tiktok.svg',
+    icon: '/icons/tiktok.webp',
   },
   {
     name: 'tiktokMusic',
@@ -219,7 +219,7 @@ export const icons = [
   {
     name: 'x',
     title: 'X',
-    icon: '/icons/x.svg',
+    icon: '/icons/x.png',
   },
   {
     name: 'wikipedia',
@@ -229,7 +229,7 @@ export const icons = [
   {
     name: 'yandex',
     title: 'Yandex',
-    icon: '/icons/yandex.svg',
+    icon: '/icons/yandex.png',
   },
   {
     name: 'youseeMusik',
@@ -239,7 +239,7 @@ export const icons = [
   {
     name: 'youtube',
     title: 'YouTube',
-    icon: '/icons/youtube.svg',
+    icon: '/icons/youtube.png',
   },
   {
     name: 'youtubeMusic',
@@ -249,7 +249,7 @@ export const icons = [
   {
     name: 'youtubeShorts',
     title: 'YouTube Shorts',
-    icon: '/icons/youtubeShorts.svg',
+    icon: '/icons/youtubeShorts.png',
   },
   {
     name: 'wynkMusic',
