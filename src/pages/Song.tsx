@@ -14,11 +14,7 @@ interface TrackFetchData {
   songName: string;
   category: string;
   audioFile: string;
-  singers: [
-    {
-      artistName: string;
-    }
-  ];
+  artist:string
   albumId : string
   albumTitle: string;
   albumThumbnail: string;
@@ -93,7 +89,7 @@ export default function Song() {
         <title>{trackDetails?.songName} | SwaLay SmartLink</title>
         <meta name="description" content={trackDetails?.description} />
         <meta name="keywords" content={`${trackDetails?.songName}, SwaLay, music, smartlink, song`} />
-        <meta name="author" content={trackDetails?.singers[0].artistName} />
+        <meta name="author" content={trackDetails?.artist} />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#3ccbc6" />
@@ -141,12 +137,8 @@ export default function Song() {
                 <h1 className="text-white text-2xl lg:text-3xl font-bold mb-2">
                   {trackDetails?.songName}
                 </h1>
-                <div className="flex gap-2 flex-wrap">
-                  {trackDetails?.singers.map((s, i) => (
-                    <span key={i} className="text-gray-300">
-                      {s.artistName}
-                    </span>
-                  ))}
+                <div className="flex gap-2 flex-wrap text-gray-400">
+                    {trackDetails?.artist}
                 </div>
                 <p className="text-gray-400 text-sm lg:text-base leading-relaxed mt-2">
                   {trackDetails?.description}
